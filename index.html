@@ -406,6 +406,7 @@ fieldset {
           <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link active" href="#gallery">Events</a></li>
           <li class="nav-item"><a class="nav-link active" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#contact">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link active" href="#volunteer">Volunteer with EPIC</a></li>
           <a href="https://www.instagram.com/indocaribcdn" target="_blank"><img src="images/social/instagram.png" alt="Company Logo" style="width: 40px; margin-left: 20px;"></a>
           <a href="https://www.facebook.com/indocaribcdn" target="_blank"><img src="images/social/facebook.png" alt="Company Logo" style="width: 40px; margin-left: 20px;"></a>
@@ -624,154 +625,61 @@ fieldset {
 
   <!-- CONTACT SECTION -->
   <!-- Replace with your contact form or email/social links -->
-  <section id="volunteer" class="py-5 bg-light">
+  <section id="contact" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Sign up to Volunteer with EPIC</h2>
-      <form
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <p><form
   action="https://formspree.io/f/xgvnrpdl"
-  class="fs-form fs-layout__2-column"
+  class="fs-form"
   target="_top"
   method="POST"
 >
   <div class="fs-field">
-    <label class="fs-label" for="full-name">Full Name</label>
-    <input
-      class="fs-input"
-      id="full-name"
-      name="full-name"
-      placeholder="Enter your name (required)"
+    <label class="fs-label" for="name">Your Name <span style="color: red;">*</span></label>
+    <input class="fs-input" id="name" name="name" required />
+    <p class="fs-description">
+      First and Last Name. 
+    </p>
+  </div>
+    <div class="fs-field">
+    <label class="fs-label" for="business">Organization(s) you're with (Business or NGO)</label>
+    <input class="fs-input" id="business" name="business" />
+    <p class="fs-description">
+    We love teaming up with fellow LGBTQ+ organizations to spark positive change and build vibrant, inclusive communities!
+    </p>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="email">Email <span style="color: red;">*</span></label>
+    <input class="fs-input" id="email" name="email" required />
+    <p class="fs-description">
+      This will help us respond to your query via an email.
+    </p>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="message">Message <span style="color: red;">*</span></label>
+    <textarea
+      class="fs-textarea"
+      id="message"
+      name="message"
       required
-    />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="email-address">Email Address</label>
-    <input
-      class="fs-input"
-      id="email-address"
-      name="email-address"
-      placeholder="Enter your email address (required)"
-      required
-    />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="pronouns">Pronouns</label>
-    <input
-      class="fs-input"
-      id="pronouns"
-      name="pronouns"
-      placeholder="Pronouns (optional)"
-    />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="orientation">Sexual Orientation</label>
-    <input
-      class="fs-input"
-      id="job-title"
-      name="job-title"
-      placeholder="Sexual Orientation (optional)"
-    />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label">Topics of Interest (optional)</label>
-    <div class="fs-checkbox-group">
-      <div class="fs-checkbox-field">
-        <div class="fs-checkbox-wrapper">
-          <input
-            class="fs-checkbox"
-            id="topics-of-interest-product-updates"
-            name="topics-of-interest"
-            type="checkbox"
-            value="product-updates"
-          />
-        </div>
-        <div>
-          <label class="fs-label" for="topics-of-interest-product-updates">
-            Community Outreach
-          </label>
-        </div>
-      </div>
-      <div class="fs-checkbox-field">
-        <div class="fs-checkbox-wrapper">
-          <input
-            class="fs-checkbox"
-            id="topics-of-interest-blog-posts"
-            name="topics-of-interest"
-            type="checkbox"
-            value="Community_Outreach"
-          />
-        </div>
-        <div>
-          <label class="fs-label" for="topics-of-interest-blog-posts">
-            Social Media Posts
-          </label>
-        </div>
-      </div>
-      <div class="fs-checkbox-field">
-        <div class="fs-checkbox-wrapper">
-          <input
-            class="fs-checkbox"
-            id="topics-of-interest-promotions"
-            name="topics-of-interest"
-            type="checkbox"
-            value="Social_Media"
-          />
-        </div>
-        <div>
-          <label class="fs-label" for="topics-of-interest-promotions">
-            LGBTQ2S+ Support Services
-          </label>
-        </div>
-      </div>
-      <div class="fs-checkbox-field">
-        <div class="fs-checkbox-wrapper">
-          <input
-            class="fs-checkbox"
-            id="topics-of-interest-events"
-            name="topics-of-interest"
-            type="checkbox"
-            value="Support_Services"
-          />
-        </div>
-        <div>
-          <label class="fs-label" for="topics-of-interest-events">Events</label>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="why join?">
-      What do you hope to gain through volunteering? (optional)
-    </label>
-    <select
-      class="fs-select"
-      id="email-frequency"
-      name="email-frequency"
-    >
-      <option value="n/a">Rather Not Say</option>
-      <option value="community">Sense of Community</option>
-      <option value="safe space">Building Safe Spaces</option>
-      <option value="decolonization">Promoting Decolonization and Positive changes</option>
-      <option value="experience">Volunteer Experience</option>
-    </select>
-  </div>
-  <div class="fs-field col-span-full">
-    <label class="fs-label" for="referral-source">
-      How Did You Hear About Us?
-    </label>
-    <input
-      class="fs-input"
-      id="referral-source"
-      name="referral-source"
-      placeholder="Let us know how you found us (optional)"
-    />
+    ></textarea>
+    <p class="fs-description">What would you like to discuss?</p>
   </div>
   <div class="fs-button-group">
-    <button class="fs-button" type="submit">Subscribe</button>
+    <button class="fs-button" type="submit">Submit</button>
   </div>
-</form>
-    </div>
-  </section>
+</form></p>
 
+  <!-- VOLUNTEER SECTION -->
+  <!-- Replace with your contact form or email/social links -->
+  <section id="volunteer" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Sign up to Volunteer with EPIC</h2>
+    <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 50px;">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSftlJLdZF6L5IaXLCUqIz4x5-EFLFgPS14WacWdYbZhivJYdg/viewform?pli=1" target="_blank" class="btn btn-primary btn-lg">
+    Volunteer with EPIC
+  </a>
+</div>
   <!-- FOOTER -->
   <!-- Edit copyright or add social media icons -->
   <footer class="text-center py-3 pride-footer">
@@ -782,5 +690,3 @@ fieldset {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
