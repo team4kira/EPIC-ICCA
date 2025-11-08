@@ -406,7 +406,19 @@ fieldset {
 #links {
   background-color: #222; /* Dark background */
 }
-
+  .hero-section {
+    background-image: url('images/PrideBanner.png');  /* Change to your rainbow image path */
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;   /* FORCE stretch both width & height */
+    
+    height: 300px;                /* STATIC HEIGHT – adjust as needed (e.g., 250px, 350px) */
+    
+    display: flex;
+    align-items: center;          /* Vertically center content */
+    justify-content: center;      /* Horizontally center content */
+    text-align: center;
+  }
 .footer-link {
   color: #007bff; /* Bootstrap primary blue */
   text-decoration: none;
@@ -414,7 +426,6 @@ fieldset {
   margin-bottom: 0.5rem;
   transition: color 0.2s ease;
 }
-
 .footer-link:hover {
   color: #0056b3; /* Darker blue on hover */
   text-decoration: underline;
@@ -485,24 +496,6 @@ fieldset {
     <a href="#events" class="btn btn-primary btn-lg">Upcoming Events</a>
   </div>
 </section>
-
-
-
-<style>
-  .hero-section {
-    background-image: url('images/PrideBanner.png');  /* Change to your rainbow image path */
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100% 100%;   /* FORCE stretch both width & height */
-    
-    height: 300px;                /* STATIC HEIGHT – adjust as needed (e.g., 250px, 350px) */
-    
-    display: flex;
-    align-items: center;          /* Vertically center content */
-    justify-content: center;      /* Horizontally center content */
-    text-align: center;
-  }
-</style>
 
   <!-- ABOUT SECTION -->
   <section id="about" class="py-5">
@@ -612,9 +605,10 @@ Help us bring vibrant, inclusive events to life—centered around LGBTQ2S+ voice
       <!-- Image 1 -->
     <div class="col-md-4 col-sm-6 text-start">
       </a>
-      <figcaption class="mt-2"><b>Tek one piece Rum Cake</b><br><br>
+      <figcaption class="mt-2"><b>Rum Cake Social</b><br><br>
+        Tek one piece Rum Cake<br><br>
 Join us and celebrate the holidays. <br><br>
-Rum Cake is our Pride holiday fete, bringing together the queer Caribbean community and allies. <br><br>
+Rum Cake is our Pride <b>holiday fete</b>, bringing together the queer Caribbean community and allies. <br><br>
 Rum Cake—affectionately known as Black Cake—being shared among family and friends has become a powerful symbol of unity across the Caribbean community. It’s in that same spirit of togetherness that you're invited to join us!<br><br>
 Rum Cake is our Pride holiday fete, bringing everyone together and celebrating the true Caribbean essence of unity, perseverance, and joy.<br><br>
 Proceeds from this event will be used to match donations in support of relief efforts in Jamaica; all other proceeds will go directly toward community programs and services by the Indo-Caribbean Canadian Association.
@@ -896,4 +890,3 @@ Proceeds from this event will be used to match donations in support of relief ef
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
